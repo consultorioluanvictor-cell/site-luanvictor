@@ -1,0 +1,132 @@
+/**
+ * DESIGN SYSTEM TOKENS - DR. LUAN VICTOR • MÉDICO INFECTOLOGISTA
+ * Paleta Oficial baseada na Logomarca e Identidade Visual:
+ * - Deep Navy: #0C2B47 (Autoridade, Rigor Clínico e Tradição Médica)
+ * - Cerulean / Azure Blue: #3B88C8 (Tecnologia, Clareza e Saúde Moderna)
+ * - Coral Red: #EF4D56 (Humanização, Acolhimento e Ponto de Atenção)
+ * - Emerald Green: #0E9F6E (Canal Ativo WhatsApp e Telemedicina)
+ */
+
+:root {
+  /* ==========================================================================
+     1. PALETA DE CORES OFICIAIS DA MARCA
+     ========================================================================== */
+
+  /* Deep Navy (Texto e Base Nobre da Logomarca) */
+  --color-navy-950: #051422;
+  --color-navy-900: #0c2b47; /* Cor Oficial da Tipografia Luan Victor */
+  --color-navy-850: #103657;
+  --color-navy-800: #16436b;
+  --color-navy-700: #1f5685;
+
+  /* Cerulean / Azure Blue (Símbolo e Subtítulo Infectologista) */
+  --color-brand-blue:     #3b88c8; /* Cor Oficial da Logomarca */
+  --color-brand-blue-dark: #2a72ad;
+  --color-brand-blue-light: #5ca1d8;
+  --color-brand-blue-50:  #f0f7fc;
+  --color-brand-blue-100: #deedf8;
+  --color-brand-blue-200: #b8daf1;
+
+  /* Coral Red (Ponto Característico do Monograma / 'i' da Marca) */
+  --color-brand-coral:       #ef4d56; /* Cor Oficial do Ponto */
+  --color-brand-coral-dark:  #d93841;
+  --color-brand-coral-light: #f77a81;
+  --color-brand-coral-50:    #fef2f2;
+  --color-brand-coral-100:   #fee2e2;
+
+  /* Cores de Ação Clínica & Conversão Direta */
+  --color-emerald-700: #065f46;
+  --color-emerald-600: #0e9f6e; /* WhatsApp & Conversão */
+  --color-emerald-500: #10b981;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-50:  #ecfdf5;
+
+  /* Superfícies e Fundos (Luminosidade Médica e Conforto Visual) */
+  --color-bg-body:     #f8fafc; /* Luminous Off-White */
+  --color-bg-surface:  #ffffff; /* Pure White */
+  --color-bg-subtle:   #f1f5f9; /* Slate Light */
+  --color-bg-blue-tint: #f0f7fc; /* Blue Ambient Glow */
+  --color-bg-dark:     #0c2b47; /* Navy Section Background */
+  --color-bg-dark-alt: #051422;
+
+  /* Textos e Contrastes (Conformidade WCAG AAA) */
+  --color-text-main:          #0f172a; /* Slate 900 */
+  --color-text-navy:          #0c2b47; /* Brand Navy */
+  --color-text-muted:         #475569; /* Slate 600 */
+  --color-text-light:         #64748b; /* Slate 500 */
+  --color-text-inverse:       #ffffff; /* White */
+  --color-text-inverse-muted: #cbd5e1;
+
+  /* Bordas */
+  --color-border-subtle: #e2e8f0;
+  --color-border-brand:  #cbd5e1;
+  --color-border-active: #3b88c8;
+
+  /* ==========================================================================
+     2. TIPOGRAFIA
+     ========================================================================== */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Caveat', cursive, sans-serif;
+
+  /* Escala de Tamanhos */
+  --font-size-xs:   0.75rem;   /* 12px */
+  --font-size-sm:   0.875rem;  /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md:   1.125rem;  /* 18px */
+  --font-size-lg:   1.25rem;   /* 20px */
+  --font-size-xl:   1.5rem;    /* 24px */
+  --font-size-2xl:  1.875rem;  /* 30px */
+  --font-size-3xl:  2.25rem;   /* 36px */
+  --font-size-4xl:  3rem;      /* 48px */
+  --font-size-5xl:  3.75rem;   /* 60px */
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  --line-height-tight:   1.15;
+  --line-height-snug:    1.3;
+  --line-height-normal:  1.6;
+  --line-height-relaxed: 1.75;
+
+  /* ==========================================================================
+     3. ESPAÇAMENTOS
+     ========================================================================== */
+  --space-1:  0.25rem; /* 4px */
+  --space-2:  0.5rem;  /* 8px */
+  --space-3:  0.75rem; /* 12px */
+  --space-4:  1rem;    /* 16px */
+  --space-5:  1.25rem; /* 20px */
+  --space-6:  1.5rem;  /* 24px */
+  --space-8:  2rem;    /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* ==========================================================================
+     4. GEOMETRIA, BORDAS E ELEVAÇÕES
+     ========================================================================== */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Sombras Harmonizadas com Deep Navy */
+  --shadow-sm:     0 2px 4px rgba(12, 43, 71, 0.04);
+  --shadow-card:   0 10px 25px -5px rgba(12, 43, 71, 0.07);
+  --shadow-hover:  0 20px 40px -10px rgba(12, 43, 71, 0.12);
+  --shadow-drawer: 0 25px 50px -12px rgba(12, 43, 71, 0.22);
+  --shadow-coral:  0 8px 20px rgba(239, 77, 86, 0.25);
+  --shadow-blue:   0 8px 20px rgba(59, 136, 200, 0.25);
+
+  --transition-fast:   150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --container-max-width: 1200px;
+}
