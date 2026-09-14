@@ -1345,8 +1345,8 @@ ul, ol {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: var(--space-10);
+  grid-template-columns: 1fr 1.15fr 0.95fr 1.4fr;
+  gap: var(--space-8);
   margin-bottom: var(--space-12);
 }
 
@@ -1378,6 +1378,14 @@ ul, ol {
   font-size: var(--font-size-sm);
   color: var(--color-text-inverse-muted);
   transition: color var(--transition-fast);
+  line-height: 1.5;
+}
+
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 .footer-link:hover {
