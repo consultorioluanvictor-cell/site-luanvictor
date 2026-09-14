@@ -271,32 +271,30 @@ ul, ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 145px;
+  height: 125px;
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
 }
 
-/* Logo no Header — aumentada em 30% e margens brancas reduzidas */
+/* Logo no Header — tamanho ampliado e perfeitamente alinhado */
 .brand-logo-clip {
-  width: 355px;
-  height: 140px;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 110px;
+  width: auto;
 }
 
 .brand-logo-img {
-  position: absolute;
-  width: 180%;
-  height: 180%;
-  top: -40%;
-  left: -40%;
+  height: 105px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
+  display: block;
 }
 
 /* Logo no Rodapé — sem fundo branco (100% transparente com logo em branco puro) */
@@ -1833,16 +1831,20 @@ ul, ol {
   }
 
   .header-container {
-    height: 120px;
+    height: 100px;
   }
 
   .brand-logo-clip {
-    width: 280px;
-    height: 110px;
+    height: 85px;
+    width: auto;
+  }
+
+  .brand-logo-img {
+    height: 80px;
   }
 
   .main-nav {
-    top: 120px;
+    top: 100px;
   }
 }
 
@@ -1852,15 +1854,20 @@ ul, ol {
   }
 
   .header-container {
-    height: 100px;
-  }
-
-  .brand-logo-clip {
-    width: 230px;
     height: 90px;
   }
 
+  .brand-logo-clip {
+    height: 75px;
+    width: auto;
+  }
+
+  .brand-logo-img {
+    height: 70px;
+  }
+
   .main-nav {
-    top: 100px;
+    top: 90px;
   }
 }
+
