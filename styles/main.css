@@ -271,7 +271,7 @@ ul, ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 130px;
+  height: 145px;
 }
 
 .brand-logo {
@@ -281,10 +281,10 @@ ul, ol {
   text-decoration: none;
 }
 
-/* Logo no Header — aumentada em 30% (273px x 122px) */
+/* Logo no Header — aumentada em 30% e margens brancas reduzidas */
 .brand-logo-clip {
-  width: 273px;
-  height: 122px;
+  width: 355px;
+  height: 140px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
@@ -292,10 +292,10 @@ ul, ol {
 
 .brand-logo-img {
   position: absolute;
-  width: 145%;
-  height: 145%;
-  top: -22%;
-  left: -22%;
+  width: 180%;
+  height: 180%;
+  top: -40%;
+  left: -40%;
   object-fit: contain;
 }
 
@@ -1831,10 +1831,36 @@ ul, ol {
   .modalities-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .header-container {
+    height: 120px;
+  }
+
+  .brand-logo-clip {
+    width: 280px;
+    height: 110px;
+  }
+
+  .main-nav {
+    top: 120px;
+  }
 }
 
 @media (max-width: 480px) {
   .modalities-grid {
     grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    height: 100px;
+  }
+
+  .brand-logo-clip {
+    width: 230px;
+    height: 90px;
+  }
+
+  .main-nav {
+    top: 100px;
   }
 }
