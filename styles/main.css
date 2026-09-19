@@ -1004,6 +1004,135 @@ ul, ol {
 }
 
 /* ==========================================================================
+   GUIA CLÍNICO DEDICADO & SEO DE ESPECIALIDADES
+   ========================================================================== */
+.specialty-guide-section {
+  padding: var(--space-20) 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-top: 1px solid #e2e8f0;
+}
+
+.specialty-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+}
+
+.specialty-guide-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(12, 43, 71, 0.08);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(12, 43, 71, 0.04);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.specialty-guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(12, 43, 71, 0.09);
+  border-color: var(--color-brand-blue-200);
+}
+
+.specialty-card-top {
+  margin-bottom: var(--space-6);
+}
+
+.specialty-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.specialty-badge--prep { background: #e0f2fe; color: #0369a1; }
+.specialty-badge--hiv { background: #ecfdf5; color: #047857; }
+.specialty-badge--ist { background: #fef3c7; color: #92400e; }
+.specialty-badge--foi { background: #fee2e2; color: #b91c1c; }
+.specialty-badge--postop { background: #f3e8ff; color: #6b21a8; }
+.specialty-badge--tele { background: #e0e7ff; color: #3730a3; }
+
+.specialty-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-navy-900);
+  line-height: 1.3;
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.specialty-card-lead {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-5);
+}
+
+.specialty-detail-box {
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-5);
+  border-left: 3px solid var(--color-brand-blue);
+}
+
+.specialty-detail-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-navy-900);
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.specialty-detail-text {
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.specialty-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: var(--space-6);
+}
+
+.specialty-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.865rem;
+  color: var(--color-text-main);
+  line-height: 1.45;
+}
+
+.specialty-point-icon {
+  color: var(--color-brand-blue);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.specialty-card-action {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+/* ==========================================================================
    SOBRE O DR. LUAN VICTOR
    ========================================================================== */
 .about-section {
