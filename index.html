@@ -20,6 +20,10 @@
   <meta property="og:image" content="assets/images/logo-mockup.jpg">
   <meta property="og:locale" content="pt_BR">
 
+  <!-- Canonical URL & Open Graph URL -->
+  <link rel="canonical" href="https://drluanvictor.com.br/">
+  <meta property="og:url" content="https://drluanvictor.com.br/">
+
   <!-- Google Fonts: Editorial Serif + Modern Sans + Script -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,15 +32,25 @@
   <!-- Estilos Principais -->
   <link rel="stylesheet" href="styles/main.css">
 
-  <!-- Schema.org para SEO Médico Oficial -->
+  <!-- Schema.org para SEO Médico Oficial no Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "Dr. Luan Victor Almeida Lima",
-    "image": "assets/images/logo.jpg",
+    "url": "https://drluanvictor.com.br/",
+    "image": "https://drluanvictor.com.br/assets/images/logo.jpg",
+    "telephone": "+5585999689770",
     "medicalSpecialty": "InfectiousDisease",
     "description": "Dr. Luan Victor Almeida Lima é médico infectologista (CRM-CE 19.760 | RQE 12.583) com atuação em consultório presencial e telemedicina em todo o Brasil. Diagnóstico de infecções complexas, febre obscura, HIV, PrEP/PEP e imunizações.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Pontes Vieira, 2340 - Sala 610, Edifício Medical UNO - Dionísio Torres",
+      "addressLocality": "Fortaleza",
+      "addressRegion": "CE",
+      "postalCode": "60130-240",
+      "addressCountry": "BR"
+    },
     "availableService": [
       {
         "@type": "MedicalProcedure",
@@ -48,7 +62,7 @@
       },
       {
         "@type": "MedicalProcedure",
-        "name": "Segunda Opinião Médica em Doenças Infecciosas"
+        "name": "Acompanhamento de HIV, PrEP, PEP e Hepatites Virais"
       }
     ]
   }
