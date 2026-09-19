@@ -1271,9 +1271,10 @@ ul, ol {
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-8);
   margin-top: var(--space-8);
+  align-items: stretch;
 }
 
 .media-card {
@@ -1287,6 +1288,13 @@ ul, ol {
   box-shadow: 0 10px 30px rgba(12, 43, 71, 0.04);
   transition: all var(--transition-normal);
   position: relative;
+  height: 100%;
+}
+
+@media (max-width: 840px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .media-card:hover {
