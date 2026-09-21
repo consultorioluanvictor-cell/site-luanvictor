@@ -917,91 +917,7 @@ ul, ol {
   line-height: var(--line-height-relaxed);
 }
 
-/* ==========================================================================
-   ÁREAS DE FOCO CLÍNICO
-   ========================================================================== */
-.focus-section {
-  padding: var(--space-20) 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e8edf2;
-}
 
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: var(--space-8);
-}
-
-.focus-card {
-  background: var(--color-bg-surface);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
-  border: 1px solid var(--color-border-subtle);
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all var(--transition-normal);
-}
-
-.focus-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--color-brand-blue-200);
-}
-
-.focus-badge {
-  align-self: flex-start;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 4px 10px;
-  border-radius: var(--radius-full);
-  margin-bottom: var(--space-4);
-}
-
-.focus-badge.rare { background: var(--color-brand-coral-100); color: var(--color-brand-coral-dark); }
-.focus-badge.chronic { background: #e0e7ff; color: #3730a3; }
-.focus-badge.prevention { background: #ecfdf5; color: #065f46; }
-.focus-badge.special { background: #fef3c7; color: #92400e; }
-.focus-badge.travel { background: var(--color-brand-blue-100); color: var(--color-navy-900); }
-.focus-badge.hospital { background: #f3e8ff; color: #6b21a8; }
-
-.focus-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  color: var(--color-navy-900);
-  margin-bottom: var(--space-3);
-  font-weight: 600;
-}
-
-.focus-desc {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-5);
-}
-
-.focus-list {
-  border-top: 1px dashed var(--color-border-subtle);
-  padding-top: var(--space-4);
-}
-
-.focus-list-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.825rem;
-  color: var(--color-text-main);
-  margin-bottom: 6px;
-}
-
-.focus-list-item::before {
-  content: "✓";
-  color: var(--color-brand-blue);
-  font-weight: bold;
-}
 
 /* ==========================================================================
    GUIA CLÍNICO DEDICADO & SEO DE ESPECIALIDADES
@@ -1260,112 +1176,7 @@ ul, ol {
   border-top: 1px solid #e8edf2;
 }
 
-/* ==========================================================================
-   NA MÍDIA & IMPRENSA
-   ========================================================================== */
-.media-section {
-  padding: var(--space-20) 0;
-  background-color: #f8fafc;
-  border-top: 1px solid #e8edf2;
-}
 
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-8);
-  margin-top: var(--space-8);
-  align-items: stretch;
-}
-
-.media-card {
-  background: #ffffff;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(12, 43, 71, 0.08);
-  padding: var(--space-8);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 10px 30px rgba(12, 43, 71, 0.04);
-  transition: all var(--transition-normal);
-  position: relative;
-  height: 100%;
-}
-
-@media (max-width: 840px) {
-  .media-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.media-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 36px rgba(12, 43, 71, 0.09);
-  border-color: var(--color-brand-blue-200);
-}
-
-.media-source-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  margin-bottom: var(--space-3);
-}
-
-.media-source-tag.gcmais {
-  background: #fee2e2;
-  color: #991b1b;
-}
-
-.media-source-tag.instagram {
-  background: #fce7f3;
-  color: #9d174d;
-}
-
-.media-date {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
-  display: block;
-}
-
-.media-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--color-navy-900);
-  line-height: 1.35;
-  margin-bottom: var(--space-4);
-}
-
-.media-description {
-  font-size: 0.925rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: var(--space-5);
-}
-
-.media-quote-box {
-  background: #f8fafc;
-  border-left: 3px solid var(--color-brand-blue);
-  padding: var(--space-4) var(--space-5);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-6);
-  font-style: italic;
-  font-size: 0.875rem;
-  color: var(--color-text-main);
-  line-height: 1.55;
-}
-
-.media-action-footer {
-  margin-top: auto;
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-border-subtle);
-}
 
 .steps-timeline {
   display: grid;
@@ -1781,7 +1592,16 @@ ul, ol {
 }
 
 .cv-item-period {
-  display: none;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-brand-blue);
+  background: var(--color-brand-blue-50);
+  border: 1px solid var(--color-brand-blue-100);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  margin-top: 3px;
+  letter-spacing: 0.03em;
 }
 
 .cv-item-desc {
