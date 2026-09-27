@@ -36,8 +36,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Preload imagem hero (melhora LCP - Core Web Vital) -->
+  <link rel="preload" as="image" href="assets/images/dr-luan-hero.jpg">
+
   <!-- Estilos Principais -->
   <link rel="stylesheet" href="styles/main.css">
+
 
   <!-- Schema.org para SEO Médico Oficial no Google -->
   <script type="application/ld+json">
@@ -51,7 +55,14 @@
     "telephone": "+5585999689770",
     "medicalSpecialty": "InfectiousDisease",
     "inLanguage": "pt-BR",
+    "priceRange": "$$",
+    "openingHours": ["Mo-Fr 08:00-18:00"],
     "description": "Dr. Luan Victor Almeida Lima é médico infectologista (CRM-CE 19.760 | RQE 12.583) com atuação em consultório presencial em Fortaleza (Imunoclinic) e telemedicina em todo o Brasil. Avaliação criteriosa e baseada em evidências em PrEP/PEP, HIV/AIDS, ISTs, Febre de Origem Indeterminada, infecções pós-procedimento cirúrgico e imunizações.",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-3.7404",
+      "longitude": "-38.5108"
+    },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -96,7 +107,44 @@
       {
         "@type": "MedicalProcedure",
         "name": "Telemedicina em Infectologia para Todo o Brasil com Receita Digital ICP-Brasil"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Investigação e Tratamento de Infecções de Repetição (ITU Recorrente, Herpes, Candidíase)"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Infectologia para Pacientes Imunossuprimidos (Oncológicos, Transplantados, Biológicos)"
       }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: WebSite (habilita Sitelinks e autoridade de domínio) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://drluanvictor.com.br/#website",
+    "url": "https://drluanvictor.com.br/",
+    "name": "Dr. Luan Victor — Infectologista em Fortaleza",
+    "inLanguage": "pt-BR",
+    "publisher": {"@id": "https://drluanvictor.com.br/#physician"}
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList das páginas de especialidade -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://drluanvictor.com.br/"},
+      {"@type": "ListItem", "position": 2, "name": "PrEP & PEP", "item": "https://drluanvictor.com.br/prep-pep"},
+      {"@type": "ListItem", "position": 3, "name": "Tratamento do HIV", "item": "https://drluanvictor.com.br/hiv"},
+      {"@type": "ListItem", "position": 4, "name": "ISTs", "item": "https://drluanvictor.com.br/ists"},
+      {"@type": "ListItem", "position": 5, "name": "Infecções de Repetição", "item": "https://drluanvictor.com.br/infeccoes-repeticao"},
+      {"@type": "ListItem", "position": 6, "name": "Imunossuprimidos", "item": "https://drluanvictor.com.br/imunossuprimidos"}
     ]
   }
   </script>
