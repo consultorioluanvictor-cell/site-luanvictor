@@ -29,8 +29,10 @@
     .pg-hero-cta{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
     .pg-hero-trust{display:flex;gap:1.5rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(12,43,71,.08);font-size:.8rem;color:#64748b}
     .quando-section{padding:5rem 0;background:#f8fafc;border-top:1px solid #e2e8f0}
-    .quando-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2.5rem}
-    .quando-card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;transition:all .25s;box-shadow:0 2px 8px rgba(12,43,71,.04)}
+    .quando-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem}
+    .quando-card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;height:100%;transition:all .25s;box-shadow:0 2px 8px rgba(12,43,71,.04)}
+    @media(max-width:992px){.quando-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.quando-grid{grid-template-columns:1fr}}
     .quando-card:hover{border-color:#b8daf1;box-shadow:0 8px 24px rgba(12,43,71,.08);transform:translateY(-2px)}
     .quando-icon{width:44px;height:44px;border-radius:10px;background:#f0f7fc;color:var(--color-brand-blue);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
     .quando-body h4{font-size:.9rem;font-weight:700;color:var(--color-navy-900);margin-bottom:.25rem}
@@ -66,7 +68,6 @@
       <div class="credentials-pill-list">
         <span>Dr. Luan Victor Almeida Lima</span>
         <span>CRM-CE 19.760 | RQE 12.583 (Infectologia)</span>
-        <span>Sociedade Brasileira de Infectologia (SBI)</span>
       </div>
       <div class="telemedicina-badge"><span class="pulse-dot"></span>Telemedicina Ativa em Todo o Brasil</div>
     </div>
@@ -123,9 +124,9 @@
           <p class="section-lead">O acesso às profilaxias do HIV deve ser ágil, sigiloso e acompanhado por especialista.</p>
         </div>
         <div class="quando-grid">
-          <div class="quando-card"><div class="quando-icon">🧬</div><div class="quando-body"><h4>Risco elevado para HIV</h4><p>HSH com múltiplos parceiros, trabalhadores do sexo ou pessoas com parceiro fixo soropositivo.</p></div></div>
-          <div class="quando-card"><div class="quando-icon">⚡</div><div class="quando-body"><h4>Exposição de risco nas últimas 72h — PEP urgente</h4><p>Relação sexual desprotegida de risco, assalto sexual ou acidente com material biológico. A PEP deve ser iniciada o mais rápido possível.</p></div></div>
-          <div class="quando-card"><div class="quando-icon">🤝</div><div class="quando-body"><h4>Parceiro/a com HIV</h4><p>Serodiscordância — mesmo que a carga viral seja indetectável. PrEP oferece camada adicional de proteção.</p></div></div>
+          <div class="quando-card"><div class="quando-icon">🧬</div><div class="quando-body"><h4>Risco elevado para HIV</h4><p>HSH com múltiplos parceiros, trabalhadores do sexo ou pessoas com parceria fixa vivendo com HIV/AIDS.</p></div></div>
+          <div class="quando-card"><div class="quando-icon">⚡</div><div class="quando-body"><h4>Exposição de risco nas últimas 72h — PEP urgente</h4><p>Relação sexual desprotegida de risco, abuso sexual ou acidente com material biológico. A PEP deve ser iniciada o mais rápido possível.</p></div></div>
+          <div class="quando-card"><div class="quando-icon">🤝</div><div class="quando-body"><h4>Parceria com HIV</h4><p>Serodiscordância — mesmo que a carga viral seja indetectável. PrEP oferece camada adicional de proteção.</p></div></div>
           <div class="quando-card"><div class="quando-icon">🩺</div><div class="quando-body"><h4>Profissional de saúde</h4><p>Acidente com agulha, material contaminado ou respingo em mucosa. Avaliação imediata para início de PEP e acompanhamento sorológico.</p></div></div>
           <div class="quando-card"><div class="quando-icon">💊</div><div class="quando-body"><h4>Uso inconsistente de preservativo</h4><p>Pessoas sexualmente ativas com múltiplos parceiros e parceiros de soroestatus desconhecido — candidatos à PrEP diária ou sob demanda.</p></div></div>
           <div class="quando-card"><div class="quando-icon">🔄</div><div class="quando-body"><h4>Transição PEP → PrEP</h4><p>Após completar o ciclo de PEP, se o risco for recorrente, avalia-se a indicação de PrEP contínua.</p></div></div>
